@@ -16,11 +16,11 @@ import (
 //
 // A multimentional array (2d slice) will be returned:
 //
-//	         0 | 1 | 2
-//	    ---------------
-//		0  | 1 | 2 | 3
-//		1  | 4 | 5 | 6
-//		2  | 7 | 8 | 9
+//		 0 | 1 | 2
+//	---------------
+//	0  | 1 | 2 | 3
+//	1  | 4 | 5 | 6
+//	2  | 7 | 8 | 9
 //
 // It returns a multimentional array (2d slice)
 func ParseMatrixCsv(file io.Reader) ([][]int, error) {
