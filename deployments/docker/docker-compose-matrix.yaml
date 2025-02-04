@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  matrix-api:
+    build:
+      context: ../../
+      dockerfile: ./deployments/docker/Dockerfile
+    container_name: matrix-api
+    ports:
+      - '8080:8080'
