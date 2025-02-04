@@ -7,6 +7,22 @@ import (
 	"strconv"
 )
 
+// ParseMatrixCsv receives a file in CSV format that contains a matrix, parses the content, and create a sliced matrix based on the files content.
+// Given this string content inside the file:
+//
+//	1,2,3
+//	4,5,6
+//	7,8,9
+//
+// A multimentional array (2d slice) will be returned:
+//
+//	         0 | 1 | 2
+//	    ---------------
+//		0  | 1 | 2 | 3
+//		1  | 4 | 5 | 6
+//		2  | 7 | 8 | 9
+//
+// It returns a multimentional array (2d slice)
 func ParseMatrixCsv(file io.Reader) ([][]int, error) {
 	records, err := csv.NewReader(file).ReadAll()
 	if err != nil {
