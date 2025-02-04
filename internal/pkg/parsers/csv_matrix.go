@@ -16,7 +16,7 @@ import (
 //
 // A multimentional array (2d slice) will be returned:
 //
-//		 0 | 1 | 2
+//	     0 | 1 | 2
 //	---------------
 //	0  | 1 | 2 | 3
 //	1  | 4 | 5 | 6
