@@ -1,4 +1,4 @@
-# Matrix Operations
+# Context
 
 Application in Golang responsible for exposing endpoints that receive an input file in csv, which its content contains a matrix of any dimension where the number of rows are equal to the number of columns (square). Each value is an integer, and there is no header row.
 
